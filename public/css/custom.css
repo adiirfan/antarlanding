@@ -1,0 +1,209 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url('../font/BebasNeue Bold.otf');
+}
+
+@font-face {
+    font-family: BebasNeueThin;
+    src: url('../font/BebasNeue Regular.otf');
+}
+
+body {
+    font-family: BebasNeue !important;
+}
+.thin{
+    font-family: BebasNeueThin !important;
+
+}
+.thin-white{
+    font-family: BebasNeueThin !important;
+    color:#ffffff;
+    font-size: .9rem;
+}
+.aerial{
+    font-family: Arial !important;
+    color:#646464;
+    font-size: .9rem;
+}
+.aerial-white{
+    font-family: Arial !important;
+    color:#ffffff;
+    font-size: .9rem;
+}
+.carousel-inner{
+    width:100%;
+    max-height: 500px !important;
+}
+.carousel-inner-custom{
+    width:100%;
+    max-height: 400px !important;
+}
+.headercustom{
+    background-color: #00b8d9;
+    color: #ffffff !important;
+}
+.btn-light{
+    color : #00b8d9 !important;
+}
+.logo{
+    width:150px;
+    height:auto;
+}
+.bendera{
+    width:25px;
+    height:auto;
+}
+.menu-link{
+    padding : 8px 25px 8px 25px !important;
+
+
+}
+.border-left{
+    border-width: 3px !important;
+    border-color: white;
+}
+.border-right{
+    border-width: 3px !important;
+    border-color: white;
+}
+
+.logo-margin{
+    margin-left:25%;
+    margin-right:auto;
+}
+.navbarcustom{
+    margin-left:auto;
+    margin-right:50%;
+}
+.bahasa{
+    font-size: 1rem !important;
+}
+a{
+    color: #ffffff !important;
+}
+.backgrounds {
+    background-image: url('../images/bg.jpg');
+    padding-top: 15px;
+    background-repeat: no-repeat;
+}
+.slider{
+    -webkit-clip-path: polygon(11% 0, 100% 0, 100% 100%, 27% 100%);
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 27% 100%);
+}
+#carousel{
+    position: relative;
+}
+
+.overlay:before{
+    content:"";
+    background: url("../images/background.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 500px;
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+.carousel-custom:before{
+    content:"";
+    background-color: #0088c1!important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    transform: skew(200.25deg);
+    left:50%;
+    height: 400px;
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+.carousel-caption-custom {
+    position: absolute;
+    right: 0%;
+    bottom: 20px;
+    left: 27%;
+    z-index: 15;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+}
+.carousel-caption-custom {
+    position: absolute;
+    right: 0%;
+    bottom: 20px;
+    left: 27%;
+    bottom:10%;
+    z-index: 15;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+}
+.carousel-caption-custom-2 {
+    position: absolute;
+    right: 0%;
+    bottom: 20px;
+    left: 60%;
+    bottom:25%;
+    z-index: 15;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+
+}
+.our-services{
+    font-size: 3.5rem;
+}
+.download{
+    font-size: 2.5rem;
+    color:white;
+}
+.captionf{
+    margin-bottom: 0px !important;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left:50%;
+}
+.moreinfo-caption{
+    text-align: right;
+    margin-left:13%;
+    color:#0088c1 !important;
+    border-radius: 0%;
+    font-size: 1rem;
+}
+.moreinfo-aboutus{
+    text-align: right;
+    margin-left:13%;
+    color: #ffffff !important;
+    background-color: #0088c1 !important;
+    border-radius: 0%;
+    font-size: 1rem;
+}
+.nulled{
+    height:3rem;
+
+}
+.border-dotted-bottom{
+    border-bottom: dotted #c1c1c1;
+
+}
+.border-dotted-top{
+    border-top: dotted #c1c1c1;
+
+}
+#download{
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.logodownload{
+    width:140px;
+}
