@@ -1,34 +1,87 @@
 @font-face {
     font-family: BebasNeue;
-    src: url('../font/BebasNeue Bold.otf');
+    src: url('../fonts/BebasNeue Bold.otf');
 }
 
 @font-face {
     font-family: BebasNeueThin;
-    src: url('../font/BebasNeue Regular.otf');
+    src: url('../fonts/BebasNeue Regular.otf');
 }
 
 body {
     font-family: BebasNeue !important;
 }
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
 .thin{
     font-family: BebasNeueThin !important;
 
+}
+.img {
+    display: inline-block;
+}
+.object-fit_fill { object-fit: fill }
+.object-fit_contain { object-fit: contain }
+.object-fit_cover { object-fit: cover }
+.object-fit_none { object-fit: none }
+.object-fit_scale-down { object-fit: scale-down }
+br {
+    display: block;
+    margin: 10px 0 !important;
+}
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("../images/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .thin-white{
     font-family: BebasNeueThin !important;
     color:#ffffff;
     font-size: .9rem;
 }
+.thin-white-h3{
+    font-family: BebasNeueThin !important;
+    color:#ffffff;
+    font-size: 1.3rem;
+}
 .aerial{
     font-family: Arial !important;
     color:#646464;
     font-size: .9rem;
+    font-height: 10;
 }
 .aerial-white{
     font-family: Arial !important;
     color:#ffffff;
     font-size: .9rem;
+    font-weight: 500;
 }
 .carousel-inner{
     width:100%;
@@ -55,8 +108,9 @@ body {
 }
 .menu-link{
     padding : 8px 25px 8px 25px !important;
-
-
+}
+.blueinfo{
+   color: #00b8d9 !important;
 }
 .border-left{
     border-width: 3px !important;
@@ -120,28 +174,30 @@ a{
     z-index: 1;
     background-repeat: no-repeat;
 }
+
 .carousel-caption-custom {
     position: absolute;
     right: 0%;
     bottom: 20px;
-    left: 27%;
-    z-index: 15;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: justify;
-}
-.carousel-caption-custom {
-    position: absolute;
-    right: 0%;
-    bottom: 20px;
-    left: 27%;
+    left: 20%;
     bottom:10%;
     z-index: 15;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     text-align: justify;
+}
+.carousel-caption-custom-m {
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    bottom:10%;
+    z-index: 15;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+    background-color:rgba(0, 0, 0, 0.5);
 }
 .carousel-caption-custom-2 {
     position: absolute;
@@ -157,7 +213,10 @@ a{
 
 }
 .our-services{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
+}
+.user-guides{
+    font-size: 1.9rem
 }
 .download{
     font-size: 2.5rem;
@@ -179,6 +238,12 @@ a{
     border-radius: 0%;
     font-size: 1rem;
 }
+.moreinfo-caption-m{
+    text-align: right;
+    color:#0088c1 !important;
+    border-radius: 0%;
+    font-size: 1rem;
+}
 .moreinfo-aboutus{
     text-align: right;
     margin-left:13%;
@@ -191,12 +256,18 @@ a{
     height:3rem;
 
 }
+.nulled-guide{
+    height:2rem;
+
+}
 .border-dotted-bottom{
     border-bottom: dotted #c1c1c1;
+    border-bottom-width: 1px;
 
 }
 .border-dotted-top{
     border-top: dotted #c1c1c1;
+    border-top-width: 1px;
 
 }
 #download{
@@ -205,5 +276,42 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
 }
 .logodownload{
-    width:140px;
+    max-width:120px;
+}
+#usermanual{
+    background-color: #0088c1;
+    background-size:inherit;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+.hand{
+    width:100%;
+}
+.quick{
+    line-height: 1.0 !important;
+}
+.panah{
+    width:.8rem;
+
+}
+#footer{
+    background-color: #00b8d9;
+    background-size:cover;
+}
+#footer2{
+    background-color: #707070;
+    background-size:cover;
+}
+.str{
+    width:100%;
+    max-height:500px;
+}
+.str2{
+    width:100%;
+    max-height:400px;
 }

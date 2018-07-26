@@ -17,10 +17,12 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link href="css/offcanvas.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/open-iconic-bootstrap.min.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
 
-        {{-- checks for service worker support.if you have the push manager package then use this line 
-        if ('serviceWorker' in navigator && 'PushManager' in window) instead of 
+
+        {{-- checks for service worker support.if you have the push manager package then use this line
+        if ('serviceWorker' in navigator && 'PushManager' in window) instead of
         if ('serviceWorker' in navigator ) --}}
         <script>
           if ('serviceWorker' in navigator ) {
@@ -35,14 +37,40 @@
             });
         }
         </script>
+
         <title>ANTAR</title>
     </head>
     <body>
+    <div id="page" class="animate-bottom">
         @yield('menu')
         @yield('content')
+        @yield('footer')
+    </div>
+    <div id="loading"></div>
     </body>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/offcanvas.js"></script>
+    <script>
+        function onReady(callback) {
+            var intervalID = window.setInterval(checkReady, 1500);
+
+            function checkReady() {
+                if (document.getElementsByTagName('body')[0] !== undefined) {
+                    window.clearInterval(intervalID);
+                    callback.call(this);
+                }
+            }
+        }
+
+        function show(id, value) {
+            document.getElementById(id).style.display = value ? 'block' : 'none';
+        }
+
+        onReady(function () {
+            show('page', true);
+            show('loading', false);
+        });
+    </script>
 
 </html>

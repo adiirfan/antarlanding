@@ -12,3 +12,4 @@
 */
 
 Route::resource('/', 'HomeController');
+Route::get('/info', 'HomeController@info');
