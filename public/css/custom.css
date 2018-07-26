@@ -33,6 +33,11 @@ body {
     font-family: BebasNeueThin !important;
 
 }
+@media (max-width: 576px){
+.text-xs-center {
+    text-align: center!important;
+}
+}
 .img {
     display: inline-block;
 }

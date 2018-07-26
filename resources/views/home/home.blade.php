@@ -74,8 +74,14 @@
                         <div class="col">
                             <h2 style="color:#009ddf;margin-bottom:0px !important;">{{ $lang === "en" ? "About Us" : "Tentang Kami" }}</h2>
                             <h1 style="color:#009ddf;">{{ $lang === "en" ? "A GLIMPSE OF AN-TAR" : "Sekilas Tentang AN-TAR" }}<br></h1>
-                                <p class="aerial">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan
-                                penataan huruf atau typesetting. Lorem Ipsum telah menjadi
+                                <p class="aerial">{{ $lang === "en" ? "Enjoy the Mobile App-based instant shopping service. Get the complete selection in 18 categories in An-Tar. 
+									Fast delivery with professional and well trained courier. An-Tar provides easy access to meet your needs instantaneously. 
+									Shop online around your residence, without queuing/complicated, security guaranteed! Save time and effort in shopping." :
+									"Nikmati layanan belanja instan berbasis Mobile App. Dapatkan pilihan lengkap dalam 18 kategori di An-Tar.
+									Pengiriman cepat dengan kurir profesional dan terlatih. 
+									An-Tar menyediakan akses mudah untuk memenuhi kebutuhan Anda seketika. 
+									Belanja online di sekitar tempat tinggal Anda, 
+									tanpa antri atau ribet, dijamin aman! Hemat waktu dan tenaga dalam berbelanja. " }}
                                 </p>
                         </div>
                     </div>
@@ -183,17 +189,18 @@
                     <div class="col nulled"></div>
                 </div>
                 <div class="row py-4">
-                    <div class="col">
+                    <div class="col text-xs-center">
                         <img src="<?php echo url('/');?>/images/logo.png">
                         <p class="aerial-white my-1">
-                            An-Tar is a Mobile App-based instan shopping service.Get a complete selecetion of different brands and thousands of your favorite products in 18 categories in An-Tar
+                            {{ $lang === "en" ? "An-Tar is a Mobile App-based instant shopping service. Get a complete selection of different brands and thousands of your favorite products in 18 categories in An-Tar." : 
+							"An-Tar adalah layanan belanja instan berbasis Mobile App. Dapatkan pilihan lengkap dari bermacam brand dan ribuan jenis produk favorit Anda dalam 18 kategori di An-Tar." }}
                         </p>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="col nulled">
-                        <div class="col">
+                        <div class="col text-xs-center">
                             <img class="logodownload mr-1 img-fluid" src="<?php echo url('/');?>/images/googleplay.png" >
                             <img class="logodownload img-fluid" src="<?php echo url('/');?>/images/appstore.png"  >
                         </div>
@@ -210,7 +217,7 @@
         <div class="row">
             <div class="col-md-2 clearfix"></div>
             <div class="col-md-4">
-                <img src="<?php echo url('/');?>/images/hand.png" class="img-fluid hand">
+                <img src="<?php echo url('/');?>/images/hand.png" class="img-fluid hand" style="vertical-align:bottom !important;">
             </div>
             <div class="col-md-4">
                 <div class="row">
@@ -227,40 +234,41 @@
                             {{ $lang === "en" ? "A QUICK GUIDE" : "PANDUAN CEPAT" }}
                         </span></p>
                     </div>
-                    <div class="row">
-                        <div class="col-2">
+                    <div class="row mb-2">
+                        <div class="col-3 col-md-2">
                             <img src="<?php echo url('/');?>/images/guide1.png">
                         </div>
-                        <div class="col">
+                        <div class="col-9 col-md-10 mb-4">
                             <h3 class="thin-white-h3">STEP 1</h3>
-                            <p class="aerial-white">Login or Register to An-Tar App by fill in phone number and password</p>
+                            <p class="aerial-white">{{ $lang === "en" ? "Login/Register to An-Tar App by fill in Phone Number 
+							and Password." : "Login atau Register ke An-Tar App dengan mengisi Nomor Telpon dan Password." }}</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
+                    
+                        <div class="col-3 col-md-2">
                             <img src="<?php echo url('/');?>/images/guide2.png">
                         </div>
-                        <div class="col">
+                        <div class="col-9 col-md-10 mb-4">
                             <h3 class="thin-white-h3">STEP 2</h3>
-                            <p class="aerial-white">Login or Register to An-Tar App by fill in phone number and password</p>
+                            <p class="aerial-white">{{ $lang === "en" ? "Verification Code, fill in Name, Email, Apartment Location (Tower and Unit)."
+							: "Verifikasi Kode, mengisi Nama, Email, Lokasi Apartemen (Tower dan Unit). " }}</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
+                    
+                        <div class="col-3 col-md-2">
                             <img src="<?php echo url('/');?>/images/guide3.png">
                         </div>
-                        <div class="col">
+                        <div class="col-9 col-md-10 mb-4">
                             <h3 class="thin-white-h3">STEP 3</h3>
-                            <p class="aerial-white">Login or Register to An-Tar App by fill in phone number and password</p>
+                            <p class="aerial-white">{{ $lang === "en" ? "Choose goods/foods you want to order in 18 categories. Then click order and courier will send within 15 minutes to the destination location."
+							: "Pilih barang atau makanan yang ingin di-order pada 18 kategori. Kemudian tekan order dan kurir akan mengirim pesanan dalam 15 menit ke lokasi tujuan." }}</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
+                    
+                        <div class="col-3 col-md-2">
                             <img src="<?php echo url('/');?>/images/guide4.png">
                         </div>
-                        <div class="col">
+                        <div class="col-9 col-md-10 mb-4">
                             <h3 class="thin-white-h3">STEP 4</h3>
-                            <p class="aerial-white">Login or Register to An-Tar App by fill in phone number and password</p>
+                            <p class="aerial-white">{{ $lang === "en" ? "Order will be given courier after user settle payment."
+							: "Order akan diberikan kurir setelah user melakukan pembayaran." }}</p>
                         </div>
                     </div>
 

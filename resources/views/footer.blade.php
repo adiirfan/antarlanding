@@ -1,4 +1,4 @@
-<div id="footer" class="container-fluid pt-4">
+<div id="footer" class="container-fluid pt-4 text-xs-center">
     <div class="row">
     <div class="col-md-2 clearfix"></div>
         <div class="col-md-8">
@@ -50,12 +50,12 @@
         <div class="col-md-2 clearfix"></div>
     </div>
 </div>
-<div id="footer2" class="container-fluid">
+<div id="footer2" class="container-fluid text-xs-center">
     <div class="row py-4">
         <div class="col-md-2 clearfix"></div>
         <div class="col-md-8">
             <div class="row">
-                <div class="col-auto">
+                <div class="col-auto mx-auto">
                     <p class="aerial-white">{{ $lang === "en" ? "Terms of Service" : "Ketentuan Layanan" }}
                         | {{ $lang === "en" ? "Privacy Policy" : "Kebijakan Privasi" }}
                     </p>
@@ -63,7 +63,7 @@
                 <div class="col-auto mx-auto">
                     <p class="text-white thin">© AN-TAR 2018 </p>
                 </div>
-                <div class="col-auto text-left">
+                <div class="col-auto text-left mx-auto">
                     <img class="logodownload mr-1" src="<?php echo url('/');?>/images/googleplay.png" >
                     <img class="logodownload" src="<?php echo url('/');?>/images/appstore.png" >
                 </div>
