@@ -41,6 +41,6 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "http://127.0.0.1:8000/",
+  "start_url": "http://127.0.0.1:8000/id",
   "orientation": "portrait"
 }

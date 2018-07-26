@@ -9,15 +9,15 @@
             <div class="collapse navbar-collapse navbarcustom justify-content-md-center mx-auto " id="navbarResponsive">
                 <ul class=" navbar-nav">
                     <li class="nav-item">
-                        <a href="/"><img class="navbar-brand img-fluid nav-link logo" src="images/logo.png"></a>
+                        <a href="/"><img class="navbar-brand img-fluid nav-link logo" src="<?php echo url("/");?>/images/logo.png"></a>
                     </li>
                     <li class="nav-item active border-left border-right border-light">
-                        <a class="nav-link menu-link" href="#aboutus"><h5>About Us</h5>
+                        <a class="nav-link menu-link" href="#aboutus"><h5>{{ $lang === "en" ? "About Us" : "Tentang Kami" }}</h5>
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item border-right border-light  ">
-                        <a class="nav-link menu-link" href="#usermanual"><h5>Help</h5></a>
+                        <a class="nav-link menu-link" href="#usermanual"><h5>{{ $lang === "en" ? "Help" : "Bantuan" }}</h5></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="#"><h5>Login</h5></a>
@@ -28,15 +28,15 @@
                     <div style="width:130px;">
                         <div class="row">
                             <div class="col-md-6 bahasa border-right border-light" >IND
-                                <img class="img-fluid bendera px-1" src="images/indonesia.png">
+                                <img class="img-fluid bendera px-1" src="<?php echo url('/');?>/images/indonesia.png">
                             </div>
                             <div class="col-md-6 bahasa">ENG
-                                <img class=" img-fluid bendera px-1" src="images/inggris.png">
+                                <img class=" img-fluid bendera px-1" src="<?php echo url('/');?>/images/inggris.png">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 pt-2">
-                                <button type="button" class="btn btn-light btn-block">JOIN AN-TAR</button>
+                                <button type="button" class="btn btn-light btn-block">{{ $lang === "en" ? "Join" : "gabung" }} AN-TAR</button>
                             </div>
                         </div>
 
@@ -49,13 +49,13 @@
 <!-- Mobile DISPLAY -->
 <div class="d-block d-sm-none">
     <nav class="navbar fixed-top headercustom">
-        <a href="/"><img class="navbar-brand img-fluid px-2 py-2 logo" src="images/logo.png"></a>
+        <a href="/"><img class="navbar-brand img-fluid px-2 py-2 logo" src="<?php echo url('/');?>/images/logo.png"></a>
         <div class="row">
             <div class="col-xs-6 bahasa" >IND
-                <img class="img-fluid bendera px-1" src="images/indonesia.png">
+                <img class="img-fluid bendera px-1" src="<?php echo url('/');?>/images/indonesia.png">
             </div>
             <div class="col-xs-6 bahasa content mx-2">ENG
-                <img class=" img-fluid bendera px-1 " src="images/inggris.png">
+                <img class=" img-fluid bendera px-1 " src="<?php echo url('/');?>/images/inggris.png">
             </div>
         </div>
         <button class="navbar-toggler p-0 border-0 text-dark custom-toggler" type="button" data-toggle="offcanvas">
@@ -65,10 +65,10 @@
         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#aboutus">About Us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#aboutus">{{ $lang === "en" ? "About Us" : "Tentang Kami" }} <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#usermanual">Help</a>
+                    <a class="nav-link" href="#usermanual">{{ $lang === "en" ? "Help" : "Bantuan" }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Login</a>
@@ -76,7 +76,7 @@
 
                 <li class="nav-item">
                     <div class="col-md-12 pt-2">
-                        <button type="button" class="btn btn-light btn-block">JOIN AN-TAR</button>
+                        <button type="button" class="btn btn-light btn-block">{{ $lang === "en" ? "Join" : "Gabung" }} AN-TAR</button>
                     </div>
                 </li>
 

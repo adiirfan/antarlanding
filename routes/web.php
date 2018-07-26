@@ -11,5 +11,9 @@
 |
 */
 
-Route::resource('/', 'HomeController');
-Route::get('/info', 'HomeController@info');
+Route::get('/{lang}', 'HomeController@index');
+Route::get('/', function () {
+    return redirect('/id');
+});
+
+Route::get('/{lang}/info', 'HomeController@info');
