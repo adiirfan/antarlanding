@@ -20,8 +20,8 @@
                 <img  src="<?php echo url('/');?>/images/1.jpg" class="str object-fit_cover">
                 <div class="carousel-caption-custom">
                     <h3 class="captionf">{{ $lang === "en" ? "What's New?" : "Berita Baru?" }}</h3>
-                    <h1 class="captionf">{{ $lang === "en" ? "Experience Our" : "Nikmati jasa" }} </h1>
-                    <h1 class="captionf">{{ $lang === "en" ? "Most Updated Service" : "Terbaru Kami" }}</h1>
+                    <h1 class="captionf-big">{{ $lang === "en" ? "Experience Our" : "Nikmati jasa" }} </h1>
+                    <h1 class="captionf-big">{{ $lang === "en" ? "Most Updated Service" : "Terbaru Kami" }}</h1>
                     <a href="{{$lang}}/info" class="btn btn-light moreinfo-caption">{{ $lang === "en" ? "More Info" : "Selengkapnya" }}<span class="ml-2">
                             <img src="<?php echo url('/');?>/images/panah.png"></span>
                     </a>
