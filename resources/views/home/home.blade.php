@@ -22,7 +22,7 @@
                     <h3 class="captionf">{{ $lang === "en" ? "What's New?" : "Berita Baru?" }}</h3>
                     <h1 class="captionf">{{ $lang === "en" ? "Experience Our" : "Nikmati jasa" }} </h1>
                     <h1 class="captionf">{{ $lang === "en" ? "Most Updated Service" : "Terbaru Kami" }}</h1>
-                    <a href="/info" class="btn btn-light moreinfo-caption">{{ $lang === "en" ? "More Info" : "Selengkapnya" }}<span class="ml-2">
+                    <a href="{{$lang}}/info" class="btn btn-light moreinfo-caption">{{ $lang === "en" ? "More Info" : "Selengkapnya" }}<span class="ml-2">
                             <img src="<?php echo url('/');?>/images/panah.png"></span>
                     </a>
                 </div>
@@ -48,8 +48,8 @@
                         <h3 class="captionf">{{ $lang === "en" ? "What's New?" : "Berita Baru?" }}</h3>
                         <h1 class="captionf">{{ $lang === "en" ? "Experience Our" : "Nikmati jasa" }} </h1>
                         <h1 class="captionf">{{ $lang === "en" ? "Most Updated Service" : "Terbaru Kami" }}</h1>
-                        <button type="button" class="btn btn-light moreinfo-caption-m">
-                            {{ $lang === "en" ? "More Info" : "Selengkapnya" }}<span class="ml-2"><img src="<?php echo url('/');?>/images/panah.png"></span></button>
+                        <a href="{{$lang}}/info" class="btn btn-light moreinfo-caption-m">
+                            {{ $lang === "en" ? "More Info" : "Selengkapnya" }}<span class="ml-2"><img src="<?php echo url('/');?>/images/panah.png"></span></a>
                     </div>
                 </div>
 
@@ -87,9 +87,9 @@
                     </div>
                     <div class="row">
                         <div class="col nulled border-dotted-top ">
-                            <button type="button" class="btn moreinfo-aboutus my-3 float-right">
+                            <a href="{{$lang}}/info" class="btn moreinfo-aboutus my-3 float-right">
                                 {{ $lang === "en" ? "More Info" : "Selengkapnya" }}
-                                <span class="ml-2"><img src="<?php echo url('/');?>/images/panah_putih.png"></span></button>
+                                <span class="ml-2"><img src="<?php echo url('/');?>/images/panah_putih.png"></span></a>
                         </div>
                     </div>
                 </div>
